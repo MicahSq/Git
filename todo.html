@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todoodie</title>
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body>
+    <main>
+    <header>Make a List if you dare</header>
+    <br>
+    <br>
+    <button id="add-task">Add a Task /Reveal form</button>
+        <hr>
+        <div class="task-form-header">
+          <form class="task-form hidden" id="task-form">
+                <label>Task Name</label>
+                <input required type="text" id="task-name" value="" />
+                <br>
+                <label>Task Text</label>
+                <textarea class="form-control" id="task-text" cols="30" rows="5"></textarea>
+                <button id="submit-task" type="submit"> Submit Task</button>
+                <br>
+                <button id="close-form-button" type="button" aria-label="close"><svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#F44336" d="M21.5 4.5H26.501V43.5H21.5z" transform="rotate(45.001 24 24)" /><path fill="#F44336" d="M21.5 4.5H26.5V43.501H21.5z" transform="rotate(135.008 24 24)" /></svg></button>
+        </form>
+      </div>
+      <br>
+    <div id="tasks-container"></div>
+    </main>
+	<script src="todo.js"></script>
+  </body>
+</html>
