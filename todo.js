@@ -40,50 +40,16 @@ const updateTaskContainer = () => {
           <div class="task" id="${id}">
             <p><strong>Title:</strong> ${name}</p>
             <p><strong>Description:</strong> ${text}</p>
-            <button style="background: #5E5DF0;
-            border-radius: 999px;
-            box-shadow: #5E5DF0 0 10px 20px -10px;
-            box-sizing: border-box;
-            color: #FFFFFF;
-            cursor: pointer;
-            font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 24px;
-            opacity: 1;
-            outline: 0 solid transparent;
-            padding: 8px 18px;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-            width: fit-content;
-            word-break: break-word;
-            border: 0;" onclick="editTask(this)" type="button" class="btn">Edit</button>
-            <button style="background: #5E5DF0;
-            border-radius: 999px;
-            box-shadow: #5E5DF0 0 10px 20px -10px;
-            box-sizing: border-box;
-            color: #FFFFFF;
-            cursor: pointer;
-            font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 24px;
-            opacity: 1;
-            outline: 0 solid transparent;
-            padding: 8px 18px;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-            width: fit-content;
-            word-break: break-word;
-            border: 0;" onclick="deleteTask(this)" type="button" class="delete-btn">Delete</button> 
+            <button onclick="editTask(this)" type="button" class="btn">Edit</button>
+            <button onclick="deleteTask(this)" type="button" class="delete-btn">Delete</button> 
           </div>
         `)
       }
     );
   };
 
+
+  
   const deleteTask = (buttonEl) => {
     const dataArrIndex = taskData.findIndex(
       (item) => item.id === buttonEl.parentElement.id

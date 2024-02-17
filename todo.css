@@ -77,9 +77,8 @@ font-size: 2em;
     touch-action: manipulation;
     width: fit-content;
     word-break: break-word;
-    border: 0;
-    
-}
+    border: 0
+    }
 
 #tasks-container {
     height: 100%;
@@ -94,11 +93,17 @@ font-size: 2em;
 }
 
 #close-form-button:hover {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     box-shadow: rgba(169, 166, 192, 0.603) 0 1px 30px;
     transition-duration: .1s;
 }
 
 input, textarea{
+    display: flex;
+    align-content: right;
+    justify-content: center;
     color: rgb(192, 189, 233);
     border-radius: 10%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -108,3 +113,27 @@ strong {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.delete-btn:active {
+  background-color: aqua;
+  cursor: url('dissolving.gif');
+}
+
+.btn {
+  background-color: #4caf50; 
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
